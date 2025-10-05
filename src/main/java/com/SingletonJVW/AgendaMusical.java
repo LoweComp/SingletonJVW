@@ -25,6 +25,11 @@ public class AgendaMusical {
         return instance;
     }
 
+    public int adicionarItemAgenda(String item) {
+        this.eventosAgendados.add(item);
+        return this.eventosAgendados.size();
+    }
+
     public void iniciarProducao() {
         this.statusProducao = true;
     }
